@@ -1,0 +1,100 @@
+/* Orbitron / Bungee / Audiowide -> Dobri izbori za font*/
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+:root {
+	--primary: #8a2be2; /* Background/Headers */
+	--secondary: #390161; /* Panels/Sections */
+	--lighter: #800080; /* ACCENTS/Buttons */
+	--lightest: #f8f8ff; /* text/highlights */
+}
+
+* {
+	font-family: "Press Start 2P", Verdana, Geneva, Tahoma, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+html,
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	font-size: 1.3vw;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--secondary);
+	color: var(--lightest);
+	text-transform: uppercase;
+	padding: 0.2em 2em;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.logo > img {
+	width: 3em;
+}
+.logo > div {
+	font-size: 0.7em;
+	color: var(--primary);
+}
+.navMain {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5em;
+}
+
+.navMain > div > a,
+.header > a {
+	text-decoration: none;
+	color: var(--lightest);
+	font-size: 1em;
+}
+
+.header > a:hover {
+	opacity: 0.6;
+}
+
+.navMain > div > a:hover {
+	color: var(--primary);
+	filter: drop-shadow(0 3px 2px var(--primary));
+}
+.navMain > div:active {
+	transform: translateY(5px);
+}
+
+.kontaktBtn {
+	padding: 0.4em;
+	background-color: var(--primary);
+	border: none;
+	border-radius: 5px;
+	color: var(--secondary) !important;
+	font-size: 0.8em !important;
+}
+
+.kontaktBtn:active {
+	transform: translateY(5px);
+}
+
+main {
+	background-image: url(../slike/background.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	flex-grow: 1;
+}
+
+footer {
+	background-color: var(--secondary);
+	color: var(--lightest);
+	text-align: center;
+	padding: 10px;
+}

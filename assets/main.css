@@ -1,0 +1,60 @@
+.hero {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	font-size: 1.4vw;
+}
+.hero > div {
+	flex: 1;
+	margin: 0 10%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.hero > div:first-of-type {
+	background-color: #39016171;
+	color: var(--lighter);
+	padding: 20px;
+	border: none;
+	border-radius: 10px;
+	filter: drop-shadow(2px 2px rgb(0, 0, 0));
+}
+
+.hero > div > p:first-of-type {
+	font-size: 1.3em;
+}
+.hero > div > p:nth-of-type(2) {
+	color: var(--primary);
+	font-size: 2.6em;
+}
+.hero > div > p:nth-of-type(3) {
+	font-size: 0.7em;
+	color: var(--lightest);
+}
+
+.teams {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	align-items: center;
+	place-items: center;
+}
+
+.teams > img {
+	width: 100%;
+	height: 80%;
+	border: 2px solid var(--primary);
+	border-radius: 5px;
+}
+
+.hero > div:nth-child(2) > p {
+	text-align: center;
+	filter: drop-shadow(2px 2px rgb(0, 0, 0));
+	color: var(--primary);
+}
+
+.vs {
+	color: var(--lighter);
+	filter: drop-shadow(2px 2px rgb(0, 0, 0));
+}
