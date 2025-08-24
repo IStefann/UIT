@@ -1,0 +1,24 @@
+:root {
+	--primary: #05f385; /* Background/Headers */
+	--secondary: #212529; /* Panels/Sections */
+	--lightest: #f8f8ff; /* text/highlights */
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	filter: drop-shadow(3px 3px 2px black);
+}
+
+.hero > p:first-child {
+	font-size: 1.8em;
+	color: var(--primary);
+}
+
+.hero > p:last-child {
+	color: var(--lightest);
+	font-size: 0.9em;
+}

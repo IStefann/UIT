@@ -1,9 +1,8 @@
 /* Orbitron / Bungee / Audiowide -> Dobri izbori za font*/
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 :root {
-	--primary: #8a2be2; /* Background/Headers */
-	--secondary: #390161; /* Panels/Sections */
-	--lighter: #800080; /* ACCENTS/Buttons */
+	--primary: #05f385; /* Background/Headers */
+	--secondary: #212529; /* Panels/Sections */
 	--lightest: #f8f8ff; /* text/highlights */
 }
 
@@ -27,7 +26,7 @@ body {
 	background-color: var(--secondary);
 	color: var(--lightest);
 	text-transform: uppercase;
-	padding: 0.2em 2em;
+	padding: 0.2em 1em;
 }
 
 .logo {
@@ -35,14 +34,14 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	gap: 2px;
+	gap: 10px;
 }
 
 .logo > img {
-	width: 3em;
+	width: 1.2em;
 }
 .logo > div {
-	font-size: 0.7em;
+	font-size: 0.5em;
 	color: var(--primary);
 }
 .navMain {
@@ -51,20 +50,29 @@ body {
 	align-items: center;
 	gap: 1.5em;
 }
-
+.navMain > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3px;
+}
+.navMain > div > img {
+	width: 1.2em;
+}
 .navMain > div > a,
 .header > a {
 	text-decoration: none;
 	color: var(--lightest);
-	font-size: 1em;
+}
+.navMain > div > a {
+	font-size: 0.7em;
 }
 
 .header > a:hover {
 	opacity: 0.6;
 }
 
-.navMain > div > a:hover {
-	color: var(--primary);
+.navMain > div:hover {
 	filter: drop-shadow(0 3px 2px var(--primary));
 }
 .navMain > div:active {
@@ -90,6 +98,7 @@ main {
 	background-size: cover;
 	background-repeat: no-repeat;
 	flex-grow: 1;
+	filter: contrast(1.1);
 }
 
 footer {

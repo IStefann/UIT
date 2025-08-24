@@ -1,7 +1,6 @@
 :root {
-	--primary: #8a2be2; /* Background/Headers */
-	--secondary: #390161; /* Panels/Sections */
-	--lighter: #800080; /* ACCENTS/Buttons */
+	--primary: #05f385; /* Background/Headers */
+	--secondary: #212529; /* Panels/Sections */
 	--lightest: #f8f8ff; /* text/highlights */
 }
 
