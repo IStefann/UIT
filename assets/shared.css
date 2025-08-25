@@ -1,5 +1,6 @@
 /* Orbitron / Bungee / Audiowide -> Dobri izbori za font*/
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
 	--primary: #05f385; /* Background/Headers */
 	--secondary: #212529; /* Panels/Sections */
@@ -90,6 +91,10 @@ body {
 
 .kontaktBtn:active {
 	transform: translateY(5px);
+}
+
+a {
+	text-decoration: none;
 }
 
 main {
