@@ -8,23 +8,90 @@
 		<link rel="stylesheet" href="../assets/turniri.css" />
 	</head>
 	<body>
-		<nav>
-			<div class="header">
-				<a href="../index.html">
-					<div class="logo">
-						<img src="../slike/logo.png" alt="Logo" />
-						<div>Game ON!</div>
+		<header>
+			<nav>
+				<div class="header">
+					<a href="../index.html">
+						<div class="logo">
+							<img src="../slike/logo.png" alt="Logo" />
+							<div>Game ON!</div>
+						</div>
+					</a>
+					<div class="navMain">
+						<div><img src="../slike/trophy.svg" alt="trofej" /><a href="#">Turniri</a></div>
+						<div><img src="../slike/image.svg" alt="slika" /><a href="./galerija.html">Galerija</a></div>
+						<div><img src="../slike/table.svg" alt="tabela" /><a href="./tabela.html">Tabela</a></div>
 					</div>
-				</a>
-				<div class="navMain">
-					<div><img src="../slike/trophy.svg" alt="trofej" /><a href="#">Turniri</a></div>
-					<div><img src="../slike/image.svg" alt="slika" /><a href="./galerija.html">Galerija</a></div>
-					<div><img src="../slike/table.svg" alt="tabela" /><a href="./tabela.html">Tabela</a></div>
+					<a class="kontaktBtn" href="./kontakt.html">Kontakt</a>
 				</div>
-				<a class="kontaktBtn" href="./kontakt.html">Kontakt</a>
+			</nav>
+		</header>
+		<main>
+			<div class="title">
+				<h2 id="kup">Letnji Kup</h2>
+				<h3 id="datum">5/10/2025</h3>
+				<select name="game" id="game">
+					<option value="lol">League Of Legends</option>
+					<option value="CSGO">CS:GO 2</option>
+				</select>
 			</div>
-		</nav>
-		<main></main>
+			<div class="grid">
+				<div class="round">
+					<p>Pocetak</p>
+					<div class="bracket">
+						<div class="group">
+							<div class="win">Team 1</div>
+							<div class="lose">Team 2</div>
+						</div>
+						<div class="group">
+							<div class="lose">Team 1</div>
+							<div class="win">Team 2</div>
+						</div>
+						<div class="group">
+							<div class="win">Team 1</div>
+							<div class="lose">Team 2</div>
+						</div>
+						<div class="group">
+							<div class="win">Team 1</div>
+							<div class="lose">Team 2</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="round">
+					<p>Polu Finale</p>
+					<div class="bracket">
+						<div class="group">
+							<div class="lose">Team 1</div>
+							<div class="win">Team 2</div>
+						</div>
+						<div class="group">
+							<div class="lose">Team 1</div>
+							<div class="win">Team 2</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="round">
+					<p>Finale</p>
+					<div class="bracket">
+						<div class="group">
+							<div class="win">Team 1</div>
+							<div class="lose">Team 2</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="round">
+					<p>Pobednik</p>
+					<div class="bracket">
+						<div class="group">
+							<div class="win">Team 1</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 		<footer>
 			<div class="footer">footer</div>
 		</footer>
