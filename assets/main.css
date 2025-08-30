@@ -14,11 +14,12 @@
 }
 
 .hero > p:first-child {
-	font-size: 1.8em;
+	font-size: 3em;
 	color: var(--primary);
 	opacity: 0;
 	transform: translateY(-100%);
 	animation: slideIn 1.5s ease forwards;
+	font-family: "Montserrat", sans-serif;
 }
 
 .hero > p:nth-child(2) {
