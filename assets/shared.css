@@ -1,116 +1,144 @@
-/* Orbitron / Bungee / Audiowide -> Dobri izbori za font*/
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
-	--primary: #05f385; /* Background/Headers */
-	--secondary: #212529; /* Panels/Sections */
-	--lightest: #f8f8ff; /* text/highlights */
+	--primary: #05f385;
+	--secondary: #0d0d0d;
 }
 
 * {
-	font-family: "Press Start 2P", Verdana, Geneva, Tahoma, sans-serif;
-	padding: 0;
 	margin: 0;
-}
-html,
-body {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	font-size: 1.3vw;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Arial", sans-serif;
 }
 
-.header {
+body {
+	background-color: var(--secondary);
+	color: white;
+}
+
+header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 20px 40px;
 	background-color: var(--secondary);
-	color: var(--lightest);
-	text-transform: uppercase;
-	padding: 0.2em 1em;
+	position: sticky;
+	top: 0;
+	z-index: 100;
 }
 
-.logo {
+.logo > a {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--primary);
+	text-decoration: none;
+}
+
+.logo > a:hover {
+	opacity: 0.7;
+}
+
+nav ul {
+	list-style: none;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	gap: 10px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 50px;
 }
 
-.logo > img {
-	width: 1.2em;
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 1rem;
+	font-weight: 600;
+	transition: color 0.3s;
 }
-.logo > div {
-	font-size: 0.5em;
+
+nav ul li a:hover {
 	color: var(--primary);
 }
-.navMain {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1.5em;
-}
-.navMain > div {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 3px;
-}
-.navMain > div > img {
-	width: 1.2em;
-}
-.navMain > div > a,
-.header > a {
-	text-decoration: none;
-	color: var(--lightest);
-}
-.navMain > div > a {
-	font-size: 0.7em;
+footer {
+	text-align: center;
+	padding: 20px;
+	background-color: #0d0d0d;
+	font-size: 0.9rem;
+	color: #888;
 }
 
-.header > a:hover {
+footer a {
+	text-decoration: none;
+	color: var(--primary);
+}
+
+footer a:hover {
 	opacity: 0.6;
 }
 
-.navMain > div:hover {
-	filter: drop-shadow(0 3px 2px var(--primary));
-}
-.navMain > div:active {
-	transform: translateY(5px);
+.visited-pages {
+	margin-top: 5px;
 }
 
-.kontaktBtn {
-	padding: 0.4em;
-	background-color: var(--primary);
-	border: none;
-	border-radius: 5px;
-	color: var(--secondary) !important;
-	font-size: 0.8em !important;
-}
-
-.kontaktBtn:active {
-	transform: translateY(5px);
-}
-
-a {
-	text-decoration: none;
-}
-
-main {
-	background-image: url(../slike/background.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	flex-grow: 1;
-	filter: contrast(1.1);
+.visited-pages ol {
+	padding: 0;
+	margin: 0;
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 50px;
 }
 
-footer {
-	background-color: var(--secondary);
-	color: var(--lightest);
-	text-align: center;
-	padding: 10px;
+.visited-pages li {
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+.greenTxt {
+	color: var(--primary);
+	font-weight: bold;
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.burger div {
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	transition: all 0.3s;
+}
+
+@media screen and (max-width: 746px) {
+	nav ul {
+		position: absolute;
+		top: 60px; /* ispod headera */
+		right: 0;
+		background-color: #0d0d0d;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		display: none;
+		gap: 0;
+	}
+
+	nav ul li {
+		margin: 20px 0;
+	}
+
+	.burger {
+		display: flex;
+	}
+
+	nav ul.active {
+		display: flex;
+	}
+
+	.visited-pages ol {
+		flex-direction: column;
+		gap: 0;
+		align-items: center;
+	}
 }

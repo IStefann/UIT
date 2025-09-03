@@ -1,32 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Game On | Tabela</title>
+		<title>Tabela</title>
 		<link rel="stylesheet" href="../assets/shared.css" />
+		<link rel="stylesheet" href="../assets/tabela.css" />
 	</head>
 	<body>
-		<nav>
-			<div class="header">
-				<a href="../index.html">
-					<div class="logo">
-						<img src="../slike/logo.svg" alt="LOGO IMAGE" />
-						<div>Game ON!</div>
-					</div>
-				</a>
-				<div class="navMain">
-					<div><a href="./turniri.html">Turniri</a></div>
-					<div><a href="./galerija.html">Galerija</a></div>
-					<div><a href="#">Tabela</a></div>
+		<header>
+			<div class="logo"><a href="../index.html">LEVEL UP</a></div>
+			<nav>
+				<ul>
+					<li><a href="./turniri.html">TURNIRI</a></li>
+					<li><a href="./galerija.html">GALERIJA</a></li>
+					<li><a href="./tabela.html">TABELA</a></li>
+					<li><a href="./kontakt.html">KONTAKT</a></li>
+				</ul>
+				<div class="burger">
+					<div></div>
+					<div></div>
+					<div></div>
 				</div>
-				<a class="kontaktBtn" href="./kontakt.html">Kontakt</a>
+			</nav>
+		</header>
+
+		<section class="section">
+			<h2>REZULTATI TIMOVA</h2>
+			<div class="table-wrapper">
+				<table>
+					<thead>
+						<tr>
+							<th>Tim</th>
+							<th>Pobede</th>
+							<th>Porazi</th>
+							<th>Bodovi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Team Phoenix</td>
+							<td class="pobeda">12</td>
+							<td class="poraz">3</td>
+							<td>36</td>
+						</tr>
+						<tr>
+							<td>Shadow Hunters</td>
+							<td class="pobeda">10</td>
+							<td class="poraz">5</td>
+							<td>30</td>
+						</tr>
+						<tr>
+							<td>Cyber Wolves</td>
+							<td class="pobeda">9</td>
+							<td class="poraz">6</td>
+							<td>27</td>
+						</tr>
+						<tr>
+							<td>Neon Dragons</td>
+							<td class="pobeda">8</td>
+							<td class="poraz">7</td>
+							<td>24</td>
+						</tr>
+						<tr>
+							<td>Pixel Titans</td>
+							<td class="pobeda">6</td>
+							<td class="poraz">9</td>
+							<td>18</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
-		</nav>
-		<div style="flex-grow: 1"></div>
+		</section>
+
 		<footer>
-			<div class="footer">footer</div>
+			&copy; 2025 <span class="greenTxt">Level Up</span> Esports. Sva prava zadržana.
+			<div class="visited-pages">
+				<p>Najposećenije stranice:</p>
+				<ol id="visitedList"></ol>
+			</div>
 		</footer>
-		<script src="./assets/script.js"></script>
+		<script src="../assets/script.js"></script>
 	</body>
 </html>

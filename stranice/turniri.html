@@ -1,100 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Game On | Turniri</title>
+		<title>Turniri</title>
 		<link rel="stylesheet" href="../assets/shared.css" />
 		<link rel="stylesheet" href="../assets/turniri.css" />
 	</head>
 	<body>
 		<header>
+			<div class="logo"><a href="../index.html">LEVEL UP</a></div>
 			<nav>
-				<div class="header">
-					<a href="../index.html">
-						<div class="logo">
-							<img src="../slike/logo.png" alt="Logo" />
-							<div>Game ON!</div>
-						</div>
-					</a>
-					<div class="navMain">
-						<div><img src="../slike/trophy.svg" alt="trofej" /><a href="#">Turniri</a></div>
-						<div><img src="../slike/image.svg" alt="slika" /><a href="./galerija.html">Galerija</a></div>
-						<div><img src="../slike/table.svg" alt="tabela" /><a href="./tabela.html">Tabela</a></div>
-					</div>
-					<a class="kontaktBtn" href="./kontakt.html">Kontakt</a>
+				<ul>
+					<li><a href="./turniri.html">TURNIRI</a></li>
+					<li><a href="./galerija.html">GALERIJA</a></li>
+					<li><a href="./tabela.html">TABELA</a></li>
+					<li><a href="./kontakt.html">KONTAKT</a></li>
+				</ul>
+				<div class="burger">
+					<div></div>
+					<div></div>
+					<div></div>
 				</div>
 			</nav>
 		</header>
-		<main>
-			<div class="title">
-				<h2 id="kup">Letnji Kup</h2>
-				<h3 id="datum">05/07/2025</h3>
-				<select name="game" id="game">
-					<option value="lol">League Of Legends</option>
-					<option value="CSGO">CS:GO 2</option>
-				</select>
+
+		<section class="hero">
+			<div class="hero-text">
+				<h1>TURNIRI</h1>
+				<h2>Pridruži se akciji</h2>
+				<p>Prati najnovije i predstojeće turnire, takmiči se sa najboljima i pokaži svoje veštine. Svi naši turniri su dizajnirani da pruže fer i uzbudljivo iskustvo za sve učesnike.</p>
 			</div>
-			<div class="grid">
-				<div class="round">
-					<p>Pocetak</p>
-					<div class="bracket">
-						<div class="group">
-							<div class="win">Shadow Pulse</div>
-							<div class="lose">Crimson Reign</div>
-						</div>
-						<div class="group">
-							<div class="lose">Void Syndicate</div>
-							<div class="win">Iron Howl</div>
-						</div>
-						<div class="group">
-							<div class="win">Nova Circuit</div>
-							<div class="lose">Frostbyte Clan</div>
-						</div>
-						<div class="group">
-							<div class="win">Echo Strikers</div>
-							<div class="lose">Quantum Rift</div>
-						</div>
-					</div>
+			<img src="../slike/heroImg.png" alt="Hero Img" />
+		</section>
+
+		<section class="section">
+			<h2>SVI TURNIRI</h2>
+			<div class="events">
+				<div class="event-card">
+					<div class="date">15. Septembar</div>
+					<div class="name">TURNIR ZA POČETNIKE</div>
+					<p>Online turnir namenjen igračima svih nivoa, sa nagradama za najbolje.</p>
+				</div>
+				<div class="event-card">
+					<div class="date">18. Septembar</div>
+					<div class="name">EKSKLUZIVNI TURNIR</div>
+					<p>Po pozivu, sa ograničenim brojem učesnika i specijalnim nagradama.</p>
+				</div>
+				<div class="event-card">
+					<div class="date">27. Decembar</div>
+					<div class="name">ŠAMPIONAT REGIONALNI</div>
+					<p>Veliki regionalni turnir sa profesionalnim timovima i live prenosom.</p>
+				</div>
+				<div class="event-card">
+					<div class="date">15. Januar</div>
+					<div class="name">ZIMSKI OPEN</div>
+					<p>Takmičenje za sve uzraste sa nagradnim fondom i specijalnim izazovima.</p>
 				</div>
 
-				<div class="round">
-					<p>Polu Finale</p>
-					<div class="bracket">
-						<div class="group">
-							<div class="lose">Shadow Pulse</div>
-							<div class="win">Iron Howl</div>
-						</div>
-						<div class="group">
-							<div class="lose">Nova Circuit</div>
-							<div class="win">Echo Strikers</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="round">
-					<p>Finale</p>
-					<div class="bracket">
-						<div class="group">
-							<div class="win">Iron Howl</div>
-							<div class="lose">Echo Strikers</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="round">
-					<p>Pobednik</p>
-					<div class="bracket">
-						<div class="group">
-							<div class="win">Iron Howl</div>
-						</div>
-					</div>
+				<div class="event-card">
+					<div class="date">28. Januar</div>
+					<div class="name">PRO LEAGUE KVALIFIKACIJE</div>
+					<p>Prilika za timove da se kvalifikuju za profesionalnu ligu i osvoje poene.</p>
 				</div>
 			</div>
-		</main>
+		</section>
+
+		<section class="section prijava">
+			<h2>PRIJAVI SE</h2>
+			<p>Želiš da učestvuješ u nekom od naših turnira? Popuni prijavni obrazac i postani deo <span class="greenTxt">Level Up</span> zajednice.</p>
+			<a href="./kontakt.html" class="btn">PRIJAVI SE SADA</a>
+		</section>
+
 		<footer>
-			<div class="footer">footer</div>
+			&copy; 2025 <span class="greenTxt">Level Up</span> Esports. Sva prava zadržana.
+			<div class="visited-pages">
+				<p>Najposećenije stranice:</p>
+				<ol id="visitedList"></ol>
+			</div>
 		</footer>
-		<script src="./assets/script.js"></script>
+		<script src="../assets/script.js"></script>
 	</body>
 </html>

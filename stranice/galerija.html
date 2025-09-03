@@ -1,32 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Game On | Galerija</title>
+		<title>Galerija</title>
 		<link rel="stylesheet" href="../assets/shared.css" />
+		<link rel="stylesheet" href="../assets/galerija.css" />
 	</head>
 	<body>
-		<nav>
-			<div class="header">
-				<a href="../index.html">
-					<div class="logo">
-						<img src="../slike/logo.svg" alt="LOGO IMAGE" />
-						<div>Game ON!</div>
-					</div>
-				</a>
-				<div class="navMain">
-					<div><a href="./turniri.html">Turniri</a></div>
-					<div><a href="#">Galerija</a></div>
-					<div><a href="./tabela.html">Tabela</a></div>
+		<header>
+			<div class="logo"><a href="../index.html">LEVEL UP</a></div>
+			<nav>
+				<ul>
+					<li><a href="./turniri.html">TURNIRI</a></li>
+					<li><a href="./galerija.html">GALERIJA</a></li>
+					<li><a href="./tabela.html">TABELA</a></li>
+					<li><a href="./kontakt.html">KONTAKT</a></li>
+				</ul>
+				<div class="burger">
+					<div></div>
+					<div></div>
+					<div></div>
 				</div>
-				<a class="kontaktBtn" href="./kontakt.html">Kontakt</a>
+			</nav>
+		</header>
+
+		<section class="section">
+			<div class="gallery">
+				<div class="gallery-item">
+					<img src="../slike/img1.jpg" alt="Slika 1" />
+				</div>
+				<div class="gallery-item">
+					<img src="../slike/img2.jpg" alt="Slika 2" />
+				</div>
+				<div class="gallery-item">
+					<img src="../slike/img3.jpg" alt="Slika 3" />
+				</div>
+				<div class="gallery-item">
+					<img src="../slike/img4.jpg" alt="Slika 4" />
+				</div>
+				<div class="gallery-item">
+					<img src="../slike/img5.jpg" alt="Slika 5" />
+				</div>
+				<div class="gallery-item">
+					<img src="../slike/img6.jpg" alt="Slika 6" />
+				</div>
+				<div class="gallery-item">
+					<img src="../slike/img7.jpg" alt="Slika 7" />
+				</div>
+				<div class="gallery-item">
+					<img src="../slike/img8.jpg" alt="Slika 8" />
+				</div>
 			</div>
-		</nav>
-		<div style="flex-grow: 1"></div>
+		</section>
+
 		<footer>
-			<div class="footer">footer</div>
+			&copy; 2025 <span class="greenTxt">Level Up</span> Esports. Sva prava zadržana.
+			<div class="visited-pages">
+				<p>Najposećenije stranice:</p>
+				<ol id="visitedList"></ol>
+			</div>
 		</footer>
-		<script src="./assets/script.js"></script>
+		<script src="../assets/script.js"></script>
 	</body>
 </html>
